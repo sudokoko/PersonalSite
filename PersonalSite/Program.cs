@@ -17,7 +17,6 @@ public static class Program
                 application.UseHttpLogging();
                 application.UseStaticFiles();
                 application.UseForwardedHeaders();
-                application.UseExceptionHandler("/error/500");
                 application.UseStatusCodePagesWithRedirects("/error/{0}");
                 application.UseEndpoints(endpoints => endpoints.MapRazorPages());
             });
