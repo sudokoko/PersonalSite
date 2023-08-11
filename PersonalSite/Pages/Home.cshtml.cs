@@ -5,8 +5,5 @@ namespace Sudokoko.PersonalSite.Pages;
 
 public class Home : PageModel
 {
-    public IActionResult OnGet()
-    {
-        return Page();
-    }
+    public IActionResult OnGet() => this.Page();
 }

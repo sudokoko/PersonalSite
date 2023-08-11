@@ -27,12 +27,14 @@ html,
 nav {
     width: 100%;
 }
+
 body,
 html,
 .flex-container,
 nav a {
     height: 100%;
 }
+
 body,
 html,
 h1 {
@@ -125,18 +127,23 @@ ul {
 .l-red {
     --hover-col: var(--pastel-red);
 }
+
 .l-orange {
     --hover-col: var(--pastel-orange);
 }
+
 .l-yellow {
     --hover-col: var(--pastel-yellow);
 }
+
 .l-green {
     --hover-col: var(--pastel-green);
 }
+
 .l-blue {
     --hover-col: var(--pastel-blue);
 }
+
 .l-purple {
     --hover-col: var(--pastel-purple);
 }
