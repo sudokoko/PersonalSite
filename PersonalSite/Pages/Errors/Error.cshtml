@@ -1,0 +1,19 @@
+﻿@page "/error/{code:int}"
+@model Sudokoko.PersonalSite.Pages.Errors.Error
+
+@{
+    Layout = "Layouts/PageLayout";
+}
+
+<h1>Are you lost?</h1>
+
+<p>
+    The server encountered a problem and could not complete your request.
+</p>
+
+<p>
+    <small>
+        <strong>Request ID:</strong> @Model.HttpContext.TraceIdentifier <br />
+        <strong>Error Code:</strong> @Model.ErrorCode
+    </small>
+</p>
