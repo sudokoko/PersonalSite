@@ -106,9 +106,22 @@ ul {
     list-style-type: circle;
 }
 
+.avatar {
+    width: var(--h1-size);
+    vertical-align: middle;
+    margin-top: -5px;
+    border-radius: 50%;
+}
+
 .flex-container {
     position: fixed;
     padding: 5px;
+}
+
+.content {
+    text-align: left;
+    font-size: 1.25rem;
+    max-width: 30rem;
 }
 
 .activity-container {
@@ -133,19 +146,6 @@ ul {
     align-items: flex-start;
     justify-content: left;
     padding: 0.8em;
-}
-
-.avatar {
-    width: var(--h1-size);
-    vertical-align: middle;
-    margin-top: -5px;
-    border-radius: 50%;
-}
-
-.content {
-    text-align: left;
-    font-size: 1.25rem;
-    max-width: 30rem;
 }
 
 .l-red {
