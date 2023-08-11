@@ -14,6 +14,7 @@ public static class Program
             webBuilder.Configure(application =>
             {
                 application.UseForwardedHeaders();
+                application.UseHttpLogging();
                 application.UseStaticFiles();
                 application.UseRouting();
                 application.UseEndpoints(endpoints =>

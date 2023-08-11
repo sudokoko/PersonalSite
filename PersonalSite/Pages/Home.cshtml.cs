@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+using Sudokoko.PersonalSite.Pages.Layouts;
 
 namespace Sudokoko.PersonalSite.Pages;
 
-public class Home : PageModel
+public class Home : PageLayout
 {
     public IActionResult OnGet() => this.Page();
 }
