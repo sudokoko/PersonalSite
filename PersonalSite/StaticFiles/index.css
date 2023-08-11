@@ -173,9 +173,12 @@ ul {
 .pan {
     background: -webkit-linear-gradient(
             0deg,
-            #FF218C 0% 33%,
-            #FFD800 33% 66%,
-            #21B1FF 66% 99%
+            #FF218C 0%,
+            #FF218C 33%,
+            #FFD800 33%,
+            #FFD800 66%,
+            #21B1FF 66%,
+            #21B1FF 99%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

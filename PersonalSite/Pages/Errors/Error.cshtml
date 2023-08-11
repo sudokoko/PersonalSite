@@ -5,15 +5,25 @@
     Layout = "Layouts/PageLayout";
 }
 
-<h1>Are you lost?</h1>
+<div>
+    <h1>
+        Ah, you're finally awake.
+    </h1>
+</div>
 
-<p>
-    The server encountered a problem and could not complete your request.
-</p>
+<div>
+    <p>
+        The server encountered a problem and could not complete your request.
+    </p>
 
-<p>
-    <small>
-        <strong>Request ID:</strong> @Model.HttpContext.TraceIdentifier <br />
-        <strong>Error Code:</strong> @Model.ErrorCode
-    </small>
-</p>
+    <p>
+        <small>
+            <strong>Request ID:</strong> @Model.HttpContext.TraceIdentifier <br/>
+            <strong>Error Code:</strong> @Model.ErrorCode
+        </small>
+    </p>
+</div>
+
+<div>
+    <a href="/">Return to Safety</a>
+</div>
