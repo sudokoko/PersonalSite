@@ -11,6 +11,6 @@ WantedBy=multi-user.target
 Type=simple
 User=root
 WorkingDirectory=/srv/personal/koko
-ExecStart=/usr/bin/dotnet run --project PersonalSite
+ExecStart=/usr/bin/dotnet run -c Debug --project PersonalSite
 Restart=on-failure
 RestartSec=5s
