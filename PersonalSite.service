@@ -1,0 +1,13 @@
+﻿[Unit]
+Description=Personal Site (ASP.NET Web Application)
+Documentation=https://github.com/sudokoko/PersonalSite
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/srv/personal/koko
+ExecStart=/usr/bin/dotnet run --project PersonalSite
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
