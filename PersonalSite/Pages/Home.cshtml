@@ -21,31 +21,4 @@
     </p>
 </div>
 
-<div class="activity-container">
-    @if (Model.LanyardActivity != null)
-    {
-        <div class="activity-image">
-            <img
-                src="https://cdn.discordapp.com/app-assets/@Model.LanyardActivity.ApplicationId/@(Model.LanyardActivity.Assets.LargeImage).png"
-                alt="@Model.LanyardActivity.Name"
-                style="border-radius: 5px;"/>
-        </div>
-        <div class="activity-information">
-            <div style="font-weight: 600;">
-                @Model.LanyardActivity.Name
-            </div>
-            <div>
-                @Model.LanyardActivity.Details
-            </div>
-            <div>
-                @Model.LanyardActivity.State
-            </div>
-        </div>
-    }
-    else
-    {
-        <div class="activity-information">
-            I'm not doing anything right now!
-        </div>
-    }
-</div>
+@await Html.PartialAsync("Partials/RichPresencePartial", Model.LanyardActivity)

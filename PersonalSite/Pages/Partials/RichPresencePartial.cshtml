@@ -1,0 +1,30 @@
+﻿@model Sudokoko.PersonalSite.Entities.LanyardActivity?
+
+<div class="activity-container">
+    @if (Model != null)
+    {
+        <div class="activity-image">
+            <img
+                src="https://cdn.discordapp.com/app-assets/@Model.ApplicationId/@(Model.Assets.LargeImage).png"
+                alt="@Model.Name"
+                style="border-radius: 5px;"/>
+        </div>
+        <div class="activity-information">
+            <div style="font-weight: 600;">
+                @Model.Name
+            </div>
+            <div>
+                @Model.Details
+            </div>
+            <div>
+                @Model.State
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="activity-information">
+            I'm not doing anything right now!
+        </div>
+    }
+</div>
