@@ -18,8 +18,18 @@
 
     <p>
         <small>
-            <strong>Request ID:</strong> @Model.HttpContext.TraceIdentifier <br/>
-            <strong>Error Code:</strong> @Model.ErrorCode
+            <div>
+                <strong>Error Code:</strong> @Model.ErrorCode
+            </div>
+             @if (Model.ErrorMessage != null)
+             {
+                 <div>
+                     <strong>Error Message:</strong> @Model.ErrorMessage
+                 </div>
+             }
+             <div>
+                <strong>Request ID:</strong> @Model.HttpContext.TraceIdentifier
+             </div>
         </small>
     </p>
 </div>

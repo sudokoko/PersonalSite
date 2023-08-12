@@ -13,11 +13,15 @@ public static class Program
             webBuilder.UseWebRoot("StaticFiles");
             webBuilder.Configure(application =>
             {
-                application.UseRouting();
-                application.UseHttpLogging();
-                application.UseStaticFiles();
                 application.UseForwardedHeaders();
-                application.UseStatusCodePagesWithRedirects("/error/{0}");
+                application.UseHttpLogging();
+                
+                application.UseStaticFiles();
+
+                application.UseExceptionHandler("/error/500");
+                application.UseStatusCodePagesWithReExecute("/error/{0}");
+
+                application.UseRouting();
                 application.UseEndpoints(endpoints => endpoints.MapRazorPages());
             });
             webBuilder.ConfigureServices(services =>
