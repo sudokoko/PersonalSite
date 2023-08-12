@@ -29,7 +29,7 @@ public class Home : PageLayout
 
         this.Lanyard = lanyard;
         this.LanyardActivity = lanyard?.Data.Activities.FirstOrDefault();
-
+        
         return this.Page();
     }
 }

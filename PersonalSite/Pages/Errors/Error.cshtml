@@ -12,28 +12,28 @@
 </div>
 
 <div>
-    <p>
+    <p class="tb-margin">
         The server encountered a problem and could not complete your request.
     </p>
 
-    <p>
+    <div class="tb-margin">
         <small>
+            <div>
+                <strong>Request ID:</strong> @Model.HttpContext.TraceIdentifier
+            </div>
             <div>
                 <strong>Error Code:</strong> @Model.ErrorCode
             </div>
-             @if (Model.ErrorMessage != null)
-             {
-                 <div>
-                     <strong>Error Message:</strong> @Model.ErrorMessage
-                 </div>
-             }
-             <div>
-                <strong>Request ID:</strong> @Model.HttpContext.TraceIdentifier
-             </div>
+            @if (Model.ErrorMessage != null)
+            {
+                <div>
+                    <strong>Error Message:</strong> @Model.ErrorMessage
+                </div>
+            }
         </small>
-    </p>
-</div>
+    </div>
 
-<div>
-    <a href="/">Return to Safety</a>
+    <div class="tb-margin">
+        <a href="/">Return to Safety</a>
+    </div>
 </div>

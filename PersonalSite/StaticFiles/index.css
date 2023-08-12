@@ -23,6 +23,22 @@ header {
     z-index: 1; /* Stay on top */
 }
 
+
+header .avatar {
+    width: var(--h1-size);
+    vertical-align: middle;
+    margin-top: -5px;
+    border-radius: 50%;
+}
+
+header .credits-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 0.75rem;
+}
+
 body,
 html,
 .flex-container,
@@ -108,21 +124,6 @@ ul {
     list-style-type: circle;
 }
 
-.avatar {
-    width: var(--h1-size);
-    vertical-align: middle;
-    margin-top: -5px;
-    border-radius: 50%;
-}
-
-.credits-right {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    font-size: 0.75rem;
-}
-
 .flex-container {
     position: fixed;
     padding: 5px;
@@ -156,6 +157,10 @@ ul {
     align-items: flex-start;
     justify-content: left;
     padding: 0.8em;
+}
+
+.tb-margin {
+    margin: 1em 0;
 }
 
 .l-red {
