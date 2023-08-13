@@ -7,12 +7,11 @@ public class Startup
         application.UseForwardedHeaders();
         application.UseHttpLogging();
 
-        application.UseStaticFiles();
-
         application.UseExceptionHandler("/error/500");
         application.UseStatusCodePagesWithReExecute("/error/{0}");
 
         application.UseRouting();
+        application.UseStaticFiles();
         application.UseEndpoints(endpoints => endpoints.MapRazorPages());
     }
 
