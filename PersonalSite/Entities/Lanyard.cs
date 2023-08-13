@@ -27,6 +27,9 @@ public class LanyardActivity
     [JsonPropertyName("name")]
     public string Name { get; set; }
 
+    [JsonPropertyName("type")]
+    public LanyardActivityType Type { get; set; }
+
     [JsonPropertyName("state")]
     public string State { get; set; }
 
@@ -41,5 +44,12 @@ public class LanyardActivity
     {
         [JsonPropertyName("large_image")]
         public string LargeImage { get; set; }
+    }
+
+    // ReSharper disable UnusedMember.Global
+    public enum LanyardActivityType
+    {
+        RichPresence = 0,
+        CustomStatus = 4,
     }
 }

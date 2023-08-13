@@ -9,7 +9,7 @@ public class Home : PageLayout
 {
     public Lanyard? Lanyard { get; set; }
     public LanyardActivity? LanyardActivity { get; set; }
-    
+
     public async Task<IActionResult> OnGet()
     {
         HttpClient httpClient = new()
@@ -28,8 +28,8 @@ public class Home : PageLayout
         Lanyard? lanyard = JsonSerializer.Deserialize<Lanyard>(reqString);
 
         this.Lanyard = lanyard;
-        this.LanyardActivity = lanyard?.Data.Activities.FirstOrDefault();
-        
+        this.LanyardActivity = lanyard?.Data.Activities.FirstOrDefault(a => a.Type == LanyardActivity.LanyardActivityType.RichPresence);
+
         return this.Page();
     }
 }
