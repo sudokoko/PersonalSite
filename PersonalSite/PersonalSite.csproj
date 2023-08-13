@@ -11,13 +11,8 @@
         <AssemblyName>Sudokoko.PersonalSite</AssemblyName>
     </PropertyGroup>
 
-
-
     <ItemGroup>
       <PackageReference Include="JetBrains.Annotations" Version="2023.2.0" />
     </ItemGroup>
-
-
-
 
 </Project>
