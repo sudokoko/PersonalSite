@@ -210,6 +210,8 @@ ul {
     color: var(--pastel-purple);
 }
 
+/*
+
 .trans {
     background: -webkit-linear-gradient(
             180deg,
@@ -241,3 +243,5 @@ ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+*/
