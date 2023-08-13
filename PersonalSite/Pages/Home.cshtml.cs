@@ -18,7 +18,7 @@ public class Home : PageLayout
             DefaultRequestHeaders =
             {
                 {
-                    "User-Agent", "drones.gay ASP.NET/5.0 HttpClient"
+                    "User-Agent", "sudokoko.xyz ASP.NET/5.0 HttpClient"
                 },
             },
         };
