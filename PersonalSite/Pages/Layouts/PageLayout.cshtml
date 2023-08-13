@@ -19,17 +19,23 @@
 </head>
 <body>
 <header>
-    <a href="/">
-        <img
-            class="avatar"
-            src="https://api.lanyard.rest/988640695847890955.webp"
-            alt="Discord avatar"/>
-    </a>
-    <div class="credits-right">
-        site design by <a href="https://janluna.eu.org/">luna</a>
+    <div class="header-container">
+        <a href="/">
+            <img
+                class="avatar"
+                src="https://api.lanyard.rest/988640695847890955.webp"
+                alt="Discord avatar"/>
+        </a>
+        <div class="header-links">
+            <a href="/">home</a>
+            <a href="/work">work</a>
+        </div>
+        <div class="header-credits">
+            site design by <a href="https://janluna.eu.org/">luna</a>
+        </div>
     </div>
 </header>
-<div class="flex-container">
+<div class="main-container">
     <main class="content">
         @RenderBody()
     </main>
