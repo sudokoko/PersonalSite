@@ -11,22 +11,6 @@ public static class Program
         .ConfigureWebHostDefaults(webBuilder =>
         {
             webBuilder.UseWebRoot("StaticFiles");
-            webBuilder.Configure(application =>
-            {
-                application.UseForwardedHeaders();
-                application.UseHttpLogging();
-                
-                application.UseStaticFiles();
-
-                application.UseExceptionHandler("/error/500");
-                application.UseStatusCodePagesWithReExecute("/error/{0}");
-
-                application.UseRouting();
-                application.UseEndpoints(endpoints => endpoints.MapRazorPages());
-            });
-            webBuilder.ConfigureServices(services =>
-            {
-                services.AddRazorPages();
-            });
+            webBuilder.UseStartup<Startup>();
         });
 }
