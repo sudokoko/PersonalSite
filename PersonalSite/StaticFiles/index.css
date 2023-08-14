@@ -154,6 +154,10 @@ ul {
     max-width: 30rem;
 }
 
+.content.mobile-content {
+    padding: 1em;
+}
+
 .activity-container {
     display: flex;
     flex-direction: row;

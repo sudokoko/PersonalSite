@@ -43,7 +43,7 @@
     </div>
 </header>
 <div class="main-container">
-    <main class="content">
+    <main class="content @(Model.IsMobile ? "mobile-content" : "")">
         @RenderBody()
     </main>
 </div>
