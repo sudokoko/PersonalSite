@@ -1,6 +1,8 @@
-﻿namespace Sudokoko.PersonalSite;
+﻿using Sudokoko.PersonalSite.Types.Interfaces;
 
-public class Startup
+namespace Sudokoko.PersonalSite;
+
+public class Startup : IWebHostStartup
 {
     public void Configure(IApplicationBuilder application)
     {

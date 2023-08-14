@@ -2,7 +2,7 @@
 
 using System.Text.Json.Serialization;
 
-namespace Sudokoko.PersonalSite.Entities;
+namespace Sudokoko.PersonalSite.Types.Entities;
 
 [Serializable]
 public class Lanyard

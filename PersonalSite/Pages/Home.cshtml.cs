@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using Sudokoko.PersonalSite.Entities;
 using Sudokoko.PersonalSite.Pages.Layouts;
+using Sudokoko.PersonalSite.Types.Entities;
 
 namespace Sudokoko.PersonalSite.Pages;
 
