@@ -1,6 +1,11 @@
-﻿@model Sudokoko.PersonalSite.Pages.Layouts.PageLayout
+﻿@using Sudokoko.PersonalSite.Extensions
+@model Sudokoko.PersonalSite.Pages.Layouts.PageLayout
 
 @* ReSharper disable Html.PathError *@
+
+@{
+    Model.IsMobile = Model.Request.IsMobile();
+}
 
 <!DOCTYPE html>
 
@@ -15,6 +20,7 @@
     <meta property="og:url" content="https://drones.gay/">
     <meta property="og:title" content="koko's site">
     <meta property="og:description" content="i'm a full stack developer, systems administrator, and hobby meteorologist.">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" type="text/css" href="/index.css"/>
     <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
 </head>
@@ -41,13 +47,27 @@
         @RenderBody()
     </main>
 </div>
-<nav>
-    <a href="https://en.pronouns.page/@@kokointhestars" class="l-red">pronouns.page</a>
-    <a href="mailto:koko@sudokoko.xyz" class="l-orange">email</a>
-    <a href="https://github.com/sudokoko" class="l-yellow">github</a>
-    <a href="https://twitter.com/kokofloral" class="l-green">twitter</a>
-    <a href="https://youtube.com/@@wxkoko" class="l-blue">youtube</a>
-    <a href="https://beacon.lbpunion.com/user/992" class="l-purple">beacon</a>
-</nav>
+@if (Model.IsMobile)
+{
+    <nav>
+        <a href="https://en.pronouns.page/@@kokointhestars" class="l-red"><i class="fa-solid fa-infinity"></i></a>
+        <a href="mailto:koko@sudokoko.xyz" class="l-orange"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/sudokoko" class="l-yellow"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/kokofloral" class="l-green"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com/@@wxkoko" class="l-blue"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://beacon.lbpunion.com/user/992" class="l-purple"><i class="fa-solid fa-earth-americas"></i></a>
+    </nav>
+}
+else
+{
+    <nav>
+        <a href="https://en.pronouns.page/@@kokointhestars" class="l-red">pronouns.page</a>
+        <a href="mailto:koko@sudokoko.xyz" class="l-orange">email</a>
+        <a href="https://github.com/sudokoko" class="l-yellow">github</a>
+        <a href="https://twitter.com/kokofloral" class="l-green">twitter</a>
+        <a href="https://youtube.com/@@wxkoko" class="l-blue">youtube</a>
+        <a href="https://beacon.lbpunion.com/user/992" class="l-purple">beacon</a>
+    </nav>
+}
 </body>
 </html>
