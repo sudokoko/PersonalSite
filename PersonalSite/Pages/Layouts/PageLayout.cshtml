@@ -47,27 +47,25 @@
         @RenderBody()
     </main>
 </div>
-@if (Model.IsMobile)
-{
-    <nav>
+<nav>
+    @if (Model.IsMobile)
+    {
         <a href="https://en.pronouns.page/@@kokointhestars" class="l-red"><i class="fa-solid fa-infinity"></i></a>
         <a href="mailto:koko@sudokoko.xyz" class="l-orange"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://github.com/sudokoko" class="l-yellow"><i class="fa-brands fa-github"></i></a>
         <a href="https://twitter.com/kokofloral" class="l-green"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://youtube.com/@@wxkoko" class="l-blue"><i class="fa-brands fa-youtube"></i></a>
         <a href="https://beacon.lbpunion.com/user/992" class="l-purple"><i class="fa-solid fa-earth-americas"></i></a>
-    </nav>
-}
-else
-{
-    <nav>
+    }
+    else
+    {
         <a href="https://en.pronouns.page/@@kokointhestars" class="l-red">pronouns.page</a>
         <a href="mailto:koko@sudokoko.xyz" class="l-orange">email</a>
         <a href="https://github.com/sudokoko" class="l-yellow">github</a>
         <a href="https://twitter.com/kokofloral" class="l-green">twitter</a>
         <a href="https://youtube.com/@@wxkoko" class="l-blue">youtube</a>
         <a href="https://beacon.lbpunion.com/user/992" class="l-purple">beacon</a>
-    </nav>
-}
+    }
+</nav>
 </body>
 </html>
