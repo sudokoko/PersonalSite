@@ -4,5 +4,5 @@ namespace Sudokoko.PersonalSite.Pages.Layouts;
 
 public class PageLayout : PageModel
 {
-    public bool IsMobile;
+    public bool IsMobile { get; set; }
 }
