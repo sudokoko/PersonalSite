@@ -85,6 +85,8 @@ html {
     background-attachment: fixed;
     background-position: center;
     color: var(--text-normal);
+    height: 100%;
+    overflow: hidden;
 }
 
 h1 {
